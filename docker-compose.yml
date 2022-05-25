@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+    fastapi_stater:
+        image: fastapi_stater:latest
+        build: .
+        container_name: fastapi_stater
+        restart: always
+        ports:
+            - "8000:8000"
